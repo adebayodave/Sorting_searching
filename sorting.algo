@@ -1,0 +1,26 @@
+ALGORITHM algorithm_insertion
+VAR
+    // declearing 
+    a= INTEGER
+    j= INTEGER
+BEGIN 
+
+    FOR a FROM 0 TO array.length-1 STEP  DO
+        current_element = array[a]
+        //   inserting the element
+        j = a -1
+        
+        WHILE (j>= 0 and current_element< arr[j]) DO
+            array[ j+1]= array[j]
+            
+            j =-1
+            //insert current_element into the sorted subarray
+            array[j+ 1] = current_element
+
+
+            array = [13, 11, 14, 2, 5]
+            insertion_sort(array)
+            print("sorted array is:", my_workings)
+        END_WHILE
+    END_FOR
+END
